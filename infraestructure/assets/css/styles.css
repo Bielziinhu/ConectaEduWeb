@@ -1,0 +1,146 @@
+/* cores */
+:root {
+    --cor-fundo: #e2f0d9;
+    --cor-destaque: #3e8c3f;
+    --cor-escuro: #2f2f2f;
+    --cor-titulo: #2f5ba1; /* Azul do título */
+    --cor-header: #ff6d00; /* Laranja do header e botão */
+}
+
+/* reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eaf4ff; /* Azul claro */
+    color: var(--cor-escuro);
+    text-align: center;
+}
+
+/* header */
+header {
+    background-color: var(--cor-header);
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+}
+
+.login-btn {
+    background-color: white;
+    color: var(--cor-header);
+    border: none;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.login-btn:hover {
+    background-color: #ffd6a6;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    gap: 30px;
+    flex-grow: 1;
+}
+
+.principal h1 {
+    font-size: 3rem;
+    color: var(--cor-titulo);
+    margin-bottom: 0;
+}
+
+.principal h2 {
+    font-size: 2rem;
+    color: var(--cor-titulo);
+    margin-bottom: 20px;
+}
+
+.edu-btn {
+    background-color: var(--cor-header);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.edu-btn:hover {
+    background-color: #ffa366;
+}
+
+/* espaço para imagem */
+.imagem {
+    width: 300px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagem img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+}
+
+/* Seção de informações sobre o projeto */
+.sobre-projeto {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    line-height: 1.6;
+}
+
+.sobre-projeto h3 {
+    color: #3e8c3f;
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+.sobre-projeto p {
+    color: #2f2f2f;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* Rodapé */
+footer {
+    background-color: #3e8c3f;
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.2);
+    font-size: 14px;
+}
+
+footer p {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+

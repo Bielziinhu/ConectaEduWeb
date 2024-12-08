@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login ConectaEdu</title>
+    <link rel="shortcut icon" href="../assets/icons/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../assets/css/login.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-box">
+            <h2>Login</h2>
+            <!-- <form action="/login" method="POST"> -->
+            <form action="../pages/usuario.html">
+                <label for="usuario">Usuário</label>
+                <input type="text" id="usuario" name="usuario" required>
+
+                <label for="senha">Senha</label>
+                <input type="password" id="senha" name="senha" required>
+
+                <button type="submit" class="btn">Entrar</button>
+                <!-- Utilizando javascript que facilita ao utilizar botoes -->
+                <button type="button" class="btn secondary" onclick="window.location.href='../pages/cadastro.html'">Registrar-se</button>
+                <!-- Direciona para algum local onde irá ajudar nisso -->
+                <a href="#" class="link">Esqueci minha senha</a>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
