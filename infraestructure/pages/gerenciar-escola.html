@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/gerenciar-escola.css">
+    <title>Gerenciar Escola</title>
+</head>
+<body>
+    <header>
+        <div class="header-esquerda">
+            <a href="../../index.html" class="h1-conecta">
+                <h1>ConectaEdu</h1>
+            </a>
+        </div>
+        <!-- Nome do usuário (fake no momento) -->
+        <div class="header-direita">
+            <span>Pedro Santana</span>
+            <div class="perfil-icon"></div>
+        </div>
+    </header>
+
+    <div class="caixa-principal">
+        <!-- Sidebar com os botões de navegação -->
+        <aside class="sidebar">
+            <button onclick="window.location.href='../pages/admin-escola.html'">Visualizar Escolas</button>
+            <button onclick="window.location.href='../pages/calendario-admin.html'">Calendário Escolar</button>
+            <button onclick="window.location.href='../pages/naoadicionado.html'">Enviar Convite Colaboradores</button>
+            <div class="sidebar-footer">
+                <button onclick="alert('Funcionalidade ainda não implementada.')">Alterar Dados Pessoais</button>
+                <button onclick="alert('Funcionalidade ainda não implementada.')">Excluir Conta</button>
+                <button onclick="window.location.href='../../index.html'">Voltar</button>
+            </div>
+            <div class="rodape">
+                <p>&copy ConectaEdu</p>
+            </div>
+        </aside>
+
+        <main>
+            <div class="gerenciar-escolas">
+                <h2>Gerenciar Escolas</h2>
+
+                <!-- Formulário para adicionar uma nova escola -->
+                <h3>Adicionar Nova Escola</h3>
+                <form id="form-adicionar-escola">
+                    <label for="nome-escola">Nome da Escola:</label>
+                    <input type="text" id="nome-escola" name="nome-escola" required>
+
+                    <label for="endereco-escola">Cidade:</label>
+                    <input type="text" id="endereco-escola" name="endereco-escola" required>
+
+                    <label for="telefone-escola">Rua:</label>
+                    <input type="text" id="telefone-escola" name="telefone-escola" required>
+
+                    <button type="submit">Adicionar Escola</button>
+                </form>
+
+                <!-- Lista de escolas -->
+                <h3>Escolas Cadastradas</h3>
+                <ul id="lista-escolas">
+                    <li>Coperil <button>Remover</button></li></li> 
+                    <li>Colégio Modelo <button>Remover</button></li></li>
+                    <li>Colégio Edimaster <button>Remover</button></li></li>
+                </ul>
+            </div>
+        </main>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2024 ConectaEdu - Desenvolvido para transformar a educação no município.</p>
+    </footer>
+</body>
+
+</html>

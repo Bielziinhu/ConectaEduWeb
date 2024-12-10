@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/calendario.css">
+    <title>Calendário - Administrador</title>
+</head>
+<body>
+    <header>
+        <div class="header-esquerda">
+            <a href="../../index.html" class="h1-conecta">
+                <h1>ConectaEdu</h1>
+              </a>
+        </div>
+        <!-- Aqui ficaria o nome de usuario, mas pode ser só fake se quiser -->
+        <div class="header-direita">
+            <span>Pedro Santana</span>
+            <div class="perfil-icon"></div>
+        </div>
+    </header>
+
+    <div class="caixa-principal">
+        <!-- Sidebar com os botoes das telas -->
+        <aside class="sidebar">
+            <button onclick="window.location.href='../pages/usuario.html'">Visualizar Escolas</button>
+            <button onclick="window.location.href='../pages/calendario.html'" class="ativo">Visualizar Calendário</button>
+            <div class="sidebar-footer">
+                <!-- Irá aparecer uma tela semelhante ao login para editar as infos -->
+                <button onclick="alert('Funcionalidade ainda não implementada.')">Alterar Dados Pessoais</button>
+                <!-- Aparecer um campo de confirmar se irá excluir a conta -->
+                <button onclick="alert('Funcionalidade ainda não implementada.')">Excluir Conta</button>
+                <button onclick="window.location.href='../../index.html'">Voltar</button>
+            </div>
+            <div class="rodape">
+                <p>&copy ConectaEdu</p>
+            </div>
+        </aside>
+        <main>
+            <div class="calendario">
+                <h2>Eventos do Mês</h2>
+                <ul>
+                    <li>01/12 - Reunião de pais e mestres</li>
+                    <li>10/12 - Provas finais</li>
+                    <li>20/12 - Encerramento do semestre</li>
+                </ul>
+            </div>
+        </main>
+    
+    </div>
+        <footer>
+            <p>&copy; 2024 ConectaEdu - Desenvolvido para transformar a educação no município.</p>
+        </footer>
+</body>
+</html>

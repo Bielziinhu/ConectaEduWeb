@@ -149,6 +149,11 @@ button {
     margin-bottom: 3px;
 }
 
+button.ativo {
+    background-color: #ffc299;
+    font-weight: bold;
+}
+
 
 /* Rodapé mas pode ser tirado se n ficou bom */
 footer {
