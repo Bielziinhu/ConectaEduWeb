@@ -25,12 +25,12 @@
         <!-- Sidebar com os botões de navegação -->
         <aside class="sidebar">
             <button onclick="window.location.href='../pages/admin-escola.html'">Visualizar Escolas</button>
-            <button onclick="window.location.href='../pages/admin.html'" class="ativo">Calendário Escolar</button>
+            <button onclick="window.location.href='../pages/gerenciar-escola.html'">Adicionar Escolas</button>
             <button onclick="window.location.href='../pages/naoadicionado.html'">Enviar Convite Colaboradores</button>
             <div class="sidebar-footer">
                 <button onclick="alert('Funcionalidade ainda não implementada.')">Alterar Dados Pessoais</button>
                 <button onclick="alert('Funcionalidade ainda não implementada.')">Excluir Conta</button>
-                <button onclick="window.location.href='../../index.html'">Voltar</button>
+                <button onclick="window.location.href='../pages/admin-escola.html'">Voltar</button>
             </div>
             <div class="rodape">
                 <p>&copy ConectaEdu</p>
@@ -39,7 +39,7 @@
 
         <main>
             <div class="calendario">
-                <h2>Adicionar Novo Evento</h2>
+                <h2>Gerenciando a Escola {nomeEscola}</h2>
                 <form>
                     <label for="data">Data:</label>
                     <input type="date" id="data" name="data" required>
@@ -48,10 +48,23 @@
                     <button type="submit">Adicionar</button>
                 </form>
 
-                <h2>Eventos Atuais</h2>
+                <h2>Eventos Escolares</h2>
                 <ul>
                     <li>01/12 - Reunião de pais e mestres <button>Remover</button></li>
                     <li>10/12 - Provas finais <button>Remover</button></li>
+                </ul>
+
+                <h2>Programas Educacionais</h2>
+                <ul>
+                    <li>08/09 - Palestra Tecnologia <button>Remover</button></li>
+                    <li>09/10 - WorkShop <button>Remover</button></li>
+                </ul>
+
+                <h2>Feriados</h2>
+                <ul>
+                    <li>07/09 - Independencia <button>Remover</button></li>
+                    <li>01/11 - Finados <button>Remover</button></li>
+                    <li>25/12 - Natal <button>Remover</button></li>
                 </ul>
             </div>
         </main>

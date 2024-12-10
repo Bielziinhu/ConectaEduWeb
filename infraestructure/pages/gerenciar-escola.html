@@ -24,12 +24,12 @@
         <!-- Sidebar com os botões de navegação -->
         <aside class="sidebar">
             <button onclick="window.location.href='../pages/admin-escola.html'">Visualizar Escolas</button>
-            <button onclick="window.location.href='../pages/calendario-admin.html'">Calendário Escolar</button>
+            <button onclick="window.location.href='../pages/gerenciar-escola.html'" class="ativo">Adicionar Escolas</button>
             <button onclick="window.location.href='../pages/naoadicionado.html'">Enviar Convite Colaboradores</button>
             <div class="sidebar-footer">
                 <button onclick="alert('Funcionalidade ainda não implementada.')">Alterar Dados Pessoais</button>
                 <button onclick="alert('Funcionalidade ainda não implementada.')">Excluir Conta</button>
-                <button onclick="window.location.href='../../index.html'">Voltar</button>
+                <button onclick="window.location.href='../pages/admin-escola.html'">Voltar</button>
             </div>
             <div class="rodape">
                 <p>&copy ConectaEdu</p>
@@ -38,8 +38,6 @@
 
         <main>
             <div class="gerenciar-escolas">
-                <h2>Gerenciar Escolas</h2>
-
                 <!-- Formulário para adicionar uma nova escola -->
                 <h3>Adicionar Nova Escola</h3>
                 <form id="form-adicionar-escola">
