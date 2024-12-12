@@ -11,21 +11,20 @@
     <div class="container">
         <div class="form-box">
             <h2>Login</h2>
-            <!-- <form action="/login" method="POST"> -->
-            <form action="../pages/usuario.html">
-                <label for="usuario">Usuário</label>
-                <input type="text" id="usuario" name="usuario" required>
+            <form id="loginForm" method="post">
+                <label for="username">Usuário</label>
+                <input type="text" id="username" name="username" required>
 
-                <label for="senha">Senha</label>
-                <input type="password" id="senha" name="senha" required>
+                <label for="password">Senha</label>
+                <input type="password" id="password" name="password" required>
 
                 <button type="submit" class="btn">Entrar</button>
-                <!-- Utilizando javascript que facilita ao utilizar botoes -->
                 <button type="button" class="btn secondary" onclick="window.location.href='../pages/cadastro.html'">Registrar-se</button>
-                <!-- Direciona para algum local onde irá ajudar nisso -->
                 <a href="#" class="link">Esqueci minha senha</a>
             </form>
         </div>
     </div>
+
+    <script src="../js/login.js"></script>
 </body>
 </html>
