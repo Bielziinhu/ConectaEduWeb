@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Usuário</title>
+    <title>Alterar Dados Pessoais</title>
     <link rel="shortcut icon" href="../assets/icons/icon.png" type="image/x-icon">
-    <link rel="stylesheet" href="../assets/css/usuario.css">
+    <link rel="stylesheet" href="../assets/css/dados.css">
 </head>
 <body>
     <header>
@@ -31,7 +31,7 @@
                 <button onclick="window.location.href='../pages/dados-pessoais.html'">Alterar Dados Pessoais</button>
                 <!-- Aparecer um campo de confirmar se irá excluir a conta -->
                 <button onclick="alert('Funcionalidade ainda não implementada.')">Excluir Conta</button>
-                <button onclick="window.location.href='../../index.html'">Voltar</button>
+                <button onclick="window.location.href='../../index.html'">Sair</button>
             </div>
             <div class="rodape">
                 <p>&copy ConectaEdu</p>
@@ -39,39 +39,24 @@
         </aside>
 
         <main>
-            <table>
-                <!-- Topicos da tabela escola -->
-                <thead>
-                    <tr>
-                        <th>Nome</th>
-                        <th>Cidade</th>
-                        <th>Rua</th>
-                        <th>Gerenciar</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <!-- Lista de escolas -->
-                    <tr>
-                        <td>Coperil</td>
-                        <td>Irecê</td>
-                        <td>R. Dom Bôsco</td>
-                        <td><button onclick="window.location.href='../pages/calendario.html'">Clique para Gerenciar</button></td>
-                    </tr>
-                    <tr>
-                        <td>Colégio Edimaster</td>
-                        <td>Irecê</td>
-                        <td>R. Maria da Conceição</td>
-                        <td><button onclick="window.location.href='../pages/calendario.html'">Clique para Gerenciar</button></td>
-                    </tr>
-                    <tr>
-                        <td>Colégio Modelo</td>
-                        <td>Irecê</td>
-                        <td>Av. Raimundo Bonfim</td>
-                        <td><button onclick="window.location.href='../pages/calendario.html'">Clique para Gerenciar</button></td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="alterar-dados">
+                <!-- Formulário para adicionar uma nova escola -->
+                <h3>Alterando Dados Pessoais</h3>
+                <form id="form-alterar-dados">
+                    <label for="nome-alterar">Nome de Usuario:</label>
+                    <input type="text" id="nome-escola" name="nome-escola" required>
+
+                    <label for="email-alterar">Email:</label>
+                    <input type="text" id="endereco-escola" name="endereco-escola" required>
+
+                    <label for="senha-alterar">Senha:</label>
+                    <input type="text" id="telefone-escola" name="telefone-escola" required>
+
+                    <button type="submit">Alterar Dados</button>
+                </form>
+            </div>
         </main>
+
     </div>
     <!-- Rodape mas pode ser tirado -->
     <footer>
