@@ -39,7 +39,7 @@ form.submit.addEventListener("click", (e) => {
         localStorage.setItem('authToken', data.token); // Assume 'token' é o nome do campo na resposta JSON
     
         // Redireciona o usuário após o login
-        window.location.href = '/pages/admin-escola.html';
+        window.location.href = '../pages/admin-escola.html';
     })
     
     .catch((err) => {
