@@ -131,6 +131,52 @@ h3 {
     margin-bottom: 5px;
 }
 
+/* ------------ */
+
+/* Estilo para o contêiner de dados */
+#dadosEscola {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Cria duas colunas */
+    gap: 20px; /* Espaço entre as colunas */
+    list-style: none; /* Remove os pontos da lista */
+    padding: 0;
+    margin: 0;
+}
+
+/* Estilo para cada item de dados */
+#dadosEscola li {
+    display: flex;
+    flex-direction: column; /* Organiza a informação verticalmente */
+    justify-content: center;
+    font-size: 1rem;
+    color: var(--cor-escuro);
+}
+
+/* Estilo para os <p> que contêm os dados */
+#dadosEscola p {
+    margin: 0; /* Remove as margens padrão dos parágrafos */
+}
+
+/* Estilo para os valores */
+#dadosEscola p span {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: var(--cor-fundo);
+    background-color: var(--cor-destaque); /* Fundo para os valores */
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+/* Efeito de hover para os valores */
+#dadosEscola p span:hover {
+    background-color: #2f8c2f; /* Alterando cor ao passar o mouse */
+    cursor: pointer; /* Muda o cursor ao passar o mouse */
+}
+
+/* ------------ */
+
+/* Formularios */
 form {
     display: flex;
     flex-direction: column;
@@ -186,6 +232,25 @@ ul li button {
 
 ul li button:hover {
     background-color: #c0392b;
+}
+
+.botoes-switch button {
+    background-color: #3e8c3f;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit {
+    background-color: #3e8c3f;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
 }
 
 /* Rodapé mas pode ser tirado se n ficou bom */

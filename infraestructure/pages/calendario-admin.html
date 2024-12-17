@@ -39,18 +39,87 @@
         <main>
             <div class="calendario">
                 <h2>Gerenciando a Escola</h2>
-                <h3 id="nomeEscola">{NomeDaEscola}</h3>
-                
-                <form id="formEvento">
-                    <label for="data">Data:</label>
-                    <input type="date" id="data" name="data" required>
+                <h2 id="nomeEscola">{NomeDaEscola}</h2>
+                <h3>Dados Sobre a Escola</h3>
+                <ul id="dadosEscola">
+                    <li><p>Qtd Alunos: <span id="quantidadeAlunos">{Alunos}</span></p></li>
+                    <li><p>Evazão: <span id="quantidadeEvadidos">{Evadidos}</span></p></li>
+                    <li><p>Aprovados: <span id="quantidadeAprovados">{Aprovados}</span></p></li>
+                    <li><p>Nível Ensino: <span id="nivelEnsino">{NivelEnsino}</span></p></li>
+                </ul>
+
+                <!-- Formulários -->
+                <form id="formEvento" class="formulario" style="display: none;">
+                    <h2>Adicionar Evento</h2>
+                    <label for="evento">Nome:</label>
+                    <input type="text" id="evento" name="evento" placeholder="Nome do evento" required>
+        
+                    <label for="data">Data Início:</label>
+                    <input type="date" id="data-inicio" name="data" required>
+        
+                    <label for="data">Data Fim:</label>
+                    <input type="date" id="data-fim" name="data" required>
+
+                    <label for="periodo">Período:</label>
+                    <input type="text" id="periodo" name="periodo" placeholder="Período (Matutino ou Vespertino)" required>
+
+                    <label for="pontos">Pontos:</label>
+                    <input type="text" id="pontos" name="pontos" placeholder="Pontos por participação" required>
+
+                    <label for="carga">Carga Horária:</label>
+                    <input type="text" id="carga" name="carga" placeholder="Carga Horária" required>
                     
-                    <label for="evento">Descrição:</label>
-                    <input type="text" id="evento" name="evento" placeholder="Descrição do evento" required>
-                    
-                    <button type="submit">Adicionar</button>
+                    <button type="submit" class="submit">Adicionar Evento</button>
                 </form>
         
+                <form id="formPrograma" class="formulario" style="display: none;">
+                    <h2>Gerenciando Programa Educacional</h2>
+                    <label for="nomePrograma">Nome do Programa:</label>
+                    <input type="text" id="nomePrograma" name="nomePrograma" placeholder="Nome do programa" required>
+
+                    <label for="descricaoPrograma">Descrição do Programa:</label>
+                    <input type="text" id="descricaoPrograma" name="descricaoPrograma" placeholder="Descrição" required>
+        
+                    <label for="dataInicioPrograma">Data de Início:</label>
+                    <input type="date" id="dataInicioPrograma" name="dataInicioPrograma" required>
+        
+                    <label for="dataFimPrograma">Data de Término:</label>
+                    <input type="date" id="dataFimPrograma" name="dataFimPrograma" required>
+
+                    <label for="periodoPrograma">Período do Programa:</label>
+                    <input type="text" id="periodoPrograma" name="periodoPrograma" placeholder="Período (Matutino ou Vespertino)" required>
+
+                    <label for="cargaPrograma">Carga Horária:</label>
+                    <input type="text" id="cargaPrograma" name="cargaPrograma" placeholder="Carga Horária" required>
+
+                    <label for="nivelPrograma">Nível de Ensino:</label>
+                    <input type="text" id="nivelPrograma" name="nivelPrograma" placeholder="Nível de Ensino" required>
+                    
+                    <button type="submit">Adicionar Programa</button>
+                </form>
+        
+                <form id="formFeriado" class="formulario">
+                    <h2>Adicionar Feriado</h2>
+                    <label for="nomeFeriado">Nome Feriado:</label>
+                    <input type="text" id="nomeFeriado" name="nomeFeriado" placeholder="Nome do Feriado" required>
+                
+                    <label for="dataInicioFeriado">Data de Início:</label>
+                    <input type="date" id="dataInicioFeriado" name="dataInicioFeriado" required>
+                
+                    <label for="dataFimFeriado">Data de Término:</label>
+                    <input type="date" id="dataFimFeriado" name="dataFimFeriado" required>
+                
+                    <button type="submit">Adicionar Feriado</button>
+                </form>
+                
+                <!-- Botões para alternar entre os formulários -->
+                <div class="botoes-switch">
+                    <button type="button" onclick="mostrarFormulario('formEvento')">Evento Escolar</button>
+                    <button type="button" onclick="mostrarFormulario('formPrograma')">Programas Edu</button>
+                    <button type="button" onclick="mostrarFormulario('formFeriado')">Feriados</button>
+                </div>
+
+                <!-- Listagens -->
                 <h2>Eventos Escolares</h2>
                 <ul id="eventosEscolares">
                     <!-- Eventos escolares serão carregados aqui -->
@@ -62,13 +131,16 @@
                 </ul>
         
                 <h2>Feriados</h2>
-                <ul id="feriados">
+                <ul id="listaFeriados">
                     <!-- Feriados serão carregados aqui -->
                 </ul>
             </div>
+
             <script src="../js/calendario-admin.js"></script>
             <script src="../js/usuario.js"></script>
+            <script src="../js/formulario-calendario.js"></script>
         </main>
+        
     </div>
 
     <footer>

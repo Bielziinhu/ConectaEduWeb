@@ -39,24 +39,29 @@
         <main>
             <div class="calendario">
                 <h2>Gerenciando a Escola</h2>
-                <h3 id="nomeEscola">{NomeDaEscola}</h3>
+                <h2 id="nomeEscola">{NomeDaEscola}</h2>
+                <h3>Dados Sobre a Escola</h3>
+                <ul id="dadosEscola">
+                    <li><p>Qtd Alunos: <span id="quantidadeAlunos">{Alunos}</span></p></li>
+                    <li><p>Evazão: <span id="quantidadeEvadidos">{Evadidos}</span></p></li>
+                    <li><p>Aprovados: <span id="quantidadeAprovados">{Aprovados}</span></p></li>
+                    <li><p>Nível Ensino: <span id="nivelEnsino">{NivelEnsino}</span></p></li>
+                </ul>
+
+                <!-- Listagens -->
                 <h2>Eventos Escolares</h2>
-                <ul>
-                    <li>01/12 - Reunião de pais e mestres </li>
-                    <li>10/12 - Provas finais </li>
+                <ul id="eventosEscolares">
+                    <!-- Eventos escolares serão carregados aqui -->
                 </ul>
-
+        
                 <h2>Programas Educacionais</h2>
-                <ul>
-                    <li>08/09 - Palestra Tecnologia </li>
-                    <li>09/10 - WorkShop </li>
+                <ul id="programasEducacionais">
+                    <!-- Programas educacionais serão carregados aqui -->
                 </ul>
-
+        
                 <h2>Feriados</h2>
-                <ul>
-                    <li>07/09 - Independencia </li>
-                    <li>01/11 - Finados </li>
-                    <li>25/12 - Natal </li>
+                <ul id="listaFeriados">
+                    <!-- Feriados serão carregados aqui -->
                 </ul>
             </div>
             <script src="../js/calendario.js"></script>
