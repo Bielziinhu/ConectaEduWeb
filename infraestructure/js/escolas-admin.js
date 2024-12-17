@@ -80,3 +80,4 @@ function obterEndereco(escolaId) {
 function gerenciarEscola(escolaId) {
     window.location.href = `../pages/calendario-admin.html?escolaId=${escolaId}`;
 }
+

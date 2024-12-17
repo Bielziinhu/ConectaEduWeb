@@ -8,18 +8,18 @@
     <link rel="stylesheet" href="../assets/css/colaborador.css">
 </head>
 <body>
-    <header>
-        <div class="header-esquerda">
-            <a href="../../index.html" class="h1-conecta">
-                <h1>ConectaEdu</h1>
-              </a>
-        </div>
-        <!-- Aqui ficaria o nome de usuario, mas pode ser só fake se quiser -->
-        <div class="header-direita">
-            <span>Pedro Santana</span>
-            <div class="perfil-icon"></div>
-        </div>
-    </header>
+    <body>
+        <header>
+            <div class="header-esquerda">
+                <a href="../../index.html" class="h1-conecta">
+                    <h1>ConectaEdu</h1>
+                </a>
+            </div>
+            <div class="header-direita">
+                <span id="username-display">Carregando...</span>
+                <div class="perfil-icon"></div>
+            </div>
+        </header>
 
     <div class="caixa-principal">
         <!-- Sidebar com os botoes das telas -->
@@ -54,6 +54,9 @@
                     <button type="submit">Enviar Convite</button>
                 </form>
             </div>
+
+            <script src="../js/usuario.js"></script>
+
         </main>
 
     </div>
