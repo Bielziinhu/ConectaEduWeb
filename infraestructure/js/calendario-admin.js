@@ -31,6 +31,8 @@ document.addEventListener("DOMContentLoaded", () => {
             document.getElementById("quantidadeEvadidos").textContent = data.quantidadeEvadidos;
             document.getElementById("quantidadeAprovados").textContent = data.quantidadeAprovados;
             document.getElementById("nivelEnsino").textContent = data.nivelEnsino;
+            const enderecoCompleto = `${data.endereco.rua}, ${data.endereco.numero}, ${data.endereco.bairro}, ${data.endereco.cidade}, ${data.endereco.estado}, CEP ${data.endereco.cep}`;
+            document.getElementById("enderecoEscola").textContent = enderecoCompleto;            
             carregarFeriados();
             carregarEventosEscolares();
             carregarProgramasEducacionais();
