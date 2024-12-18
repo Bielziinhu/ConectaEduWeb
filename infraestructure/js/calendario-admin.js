@@ -32,6 +32,8 @@ document.addEventListener("DOMContentLoaded", () => {
             document.getElementById("quantidadeAprovados").textContent = data.quantidadeAprovados;
             document.getElementById("nivelEnsino").textContent = data.nivelEnsino;
             carregarFeriados();
+            carregarEventosEscolares();
+            carregarProgramasEducacionais();
         })
         .catch(err => {
             console.error("Erro ao carregar a escola:", err);
@@ -130,6 +132,5 @@ document.addEventListener("DOMContentLoaded", () => {
             });
     });
 
-    // Carregar feriados ao carregar a página
     carregarFeriados();
 });

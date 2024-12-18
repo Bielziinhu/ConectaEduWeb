@@ -29,7 +29,7 @@
                 <!-- Irá aparecer uma tela semelhante ao login para editar as infos -->
                 <button onclick="window.location.href='../pages/dados-pessoais.html'">Alterar Dados Pessoais</button>
                 <!-- Aparecer um campo de confirmar se irá excluir a conta -->
-                <button onclick="alert('Funcionalidade ainda não implementada.')">Excluir Conta</button>
+                <button onclick="window.location.href='../pages/excluir-conta.html'">Excluir Conta</button>
                 <button onclick="history.back()">Voltar</button>
             </div>
             <div class="rodape">
@@ -43,13 +43,10 @@
                 <h3>Alterando Dados Pessoais</h3>
                 <form id="form-alterar-dados">
                     <label for="nome-alterar">Nome de Usuario:</label>
-                    <input type="text" id="nome-escola" name="nome-escola" required>
-
-                    <label for="email-alterar">Email:</label>
-                    <input type="text" id="endereco-escola" name="endereco-escola" required>
+                    <input type="text" id="nome-escola" name="nome-escola" required placeholder="Digite seu usuário">
 
                     <label for="senha-alterar">Senha:</label>
-                    <input type="text" id="telefone-escola" name="telefone-escola" required>
+                    <input type="text" id="telefone-escola" name="telefone-escola" required placeholder="Digite sua senha">
 
                     <button type="submit">Alterar Dados</button>
                 </form>
