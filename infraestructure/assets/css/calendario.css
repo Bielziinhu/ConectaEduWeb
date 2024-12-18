@@ -234,13 +234,29 @@ ul li button:hover {
     background-color: #c0392b;
 }
 
-.botoes-switch button {
+.botao-lista {
     background-color: #3e8c3f;
     color: white;
     padding: 10px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario label {
+    margin: 5px 0;
+}
+
+.formulario input{
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 5px;
+    box-sizing: border-box;
 }
 
 .submit {

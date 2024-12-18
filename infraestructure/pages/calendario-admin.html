@@ -98,7 +98,7 @@
                     <button type="submit">Adicionar Programa</button>
                 </form>
         
-                <form id="formFeriado" class="formulario">
+                <form id="formFeriado" class="formulario" style="display: none;">
                     <h2>Adicionar Feriado</h2>
                     <label for="nomeFeriado">Nome Feriado:</label>
                     <input type="text" id="nomeFeriado" name="nomeFeriado" placeholder="Nome do Feriado" required>
@@ -111,26 +111,19 @@
                 
                     <button type="submit">Adicionar Feriado</button>
                 </form>
-                
-                <!-- Botões para alternar entre os formulários -->
-                <div class="botoes-switch">
-                    <button type="button" onclick="mostrarFormulario('formEvento')">Evento Escolar</button>
-                    <button type="button" onclick="mostrarFormulario('formPrograma')">Programas Edu</button>
-                    <button type="button" onclick="mostrarFormulario('formFeriado')">Feriados</button>
-                </div>
 
                 <!-- Listagens -->
-                <h2>Eventos Escolares</h2>
+                <h2>Eventos Escolares <button type="button" class="botao-lista" onclick="mostrarFormulario('formEvento')">Adicionar Evento</button></h2>
                 <ul id="eventosEscolares">
                     <!-- Eventos escolares serão carregados aqui -->
                 </ul>
         
-                <h2>Programas Educacionais</h2>
+                <h2>Programas Educacionais <button type="button" class="botao-lista" onclick="mostrarFormulario('formPrograma')">Adicionar Programa</button></h2>
                 <ul id="programasEducacionais">
                     <!-- Programas educacionais serão carregados aqui -->
                 </ul>
         
-                <h2>Feriados</h2>
+                <h2>Feriados <button type="button" class="botao-lista" onclick="mostrarFormulario('formFeriado')">Adicionar Feriado</button></h2>
                 <ul id="listaFeriados">
                     <!-- Feriados serão carregados aqui -->
                 </ul>
